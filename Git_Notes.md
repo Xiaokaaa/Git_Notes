@@ -212,7 +212,7 @@
   ![](image/Git/Quick_setup.png)
 
 
-## 6 团队多人协作
+## 6 团队多人协作（进阶）
 ### 6.1 项目负责人（张三）新建一个项目仓库
 - 登录GitHub，点击头像->Your projects->New project.
 
@@ -352,6 +352,34 @@
 - 成员每次推送之前，都应先把最新的版本pull到自己的本地分支。
 - 更新好内容后，先推送到远程分支，再与主分支合并。
 
+- 首次加入并更新项目
+```
+git clone <地址>    # 克隆项目
+git checkout -b <新分支名>
 
+# 修改完提交（在新分支中）
+git pull origin <主分支>  # 拉取最新内容
 
+git add .     # 首次修改
+git commit -m "备注"
+git push origin <新分支>
+git checkout <主分支>
+git merge <新分支>
+git push origin <主分支>
+```
+
+- 非首次更新项目
+```
+# 拉取最新内容
+git checkout <新分支>
+git pull origin <主分支>
+
+# 修改完提交
+git add .    
+git commit -m "备注"
+git push origin <新分支>
+git checkout <主分支>
+git merge <新分支>
+git push origin <主分支>
+```
 
