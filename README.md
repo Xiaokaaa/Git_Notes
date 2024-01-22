@@ -23,6 +23,7 @@
   - [6.1 项目负责人（张三）新建一个项目仓库](#61-项目负责人张三新建一个项目仓库)
   - [6.2 项目负责人邀请他人（李四）加入项目](#62-项目负责人邀请他人李四加入项目)
   - [6.3 总结](#63-总结)
+  - [遇到的问题及解决方案](#遇到的问题及解决方案)
 
 
 ## 1 学习链接
@@ -392,3 +393,6 @@ git merge <新分支>
 git push origin <主分支>
 ```
 
+### 遇到的问题及解决方案
+- 【Github】ssh: connect to host github.com port 22: Connection refused
+  - 解决方法：[CSDN 博客](https://blog.csdn.net/weixin_43835470/article/details/135642699)
